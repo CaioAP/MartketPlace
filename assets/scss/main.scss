@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'sourceRegular';
+  src: url('@/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sourceBold';
+  src: url('@/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'sourceBlack';
+  src: url('@/assets/fonts/SourceSansPro-Black.ttf') format('truetype');
+}
+
+$font-regular: 'sourceRegular', sans-serif;
+$font-bold: 'sourceBold', sans-serif;
+$font-black: 'sourceBlack', sans-serif;
+
+$screen-lg: 1020px;
+$screen-md: 840px;
+$screen-sm: 520px;
+
+$primary-color: #9237B8;
+$primary-light-color: #D694F6;
+$secondary-color: #929292;
+$secondary-light-color: #CFCFCF;
+$danger-color: #F11A2A;
+$text-color: #444;
+$text-light-color: #888;
+$white-color: #FFF;
+
+$box-shadow: 0 0 12px 2px rgb(0, 0, 0, 0.1);
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: $font-regular;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  color: $text-color;
+}
+
+a {
+  color: $primary-color;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1020px;
+  padding-inline: 1rem;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.field-grid-5-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.field-grid-6-4 {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 1rem;
+}
